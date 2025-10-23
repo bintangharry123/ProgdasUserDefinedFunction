@@ -6,22 +6,22 @@ using namespace std;
 // Konstanta nilai π
 const double PI = 3.1416;
 
-// Fungsi untuk menghitung jarak antara dua titik
+// Menghitung jarak antara dua titik
 double distance(double x1, double y1, double x2, double y2) {
     return sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
 }
 
-// Fungsi untuk menghitung jari-jari lingkaran
+// Menghitung jari-jari lingkaran
 double radius(double x1, double y1, double x2, double y2) {
     return distance(x1, y1, x2, y2);
 }
 
-// Fungsi untuk menghitung keliling lingkaran
+// Menghitung keliling lingkaran
 double circumference(double r) {
     return 2 * PI * r;
 }
 
-// Fungsi untuk menghitung luas lingkaran
+// Menghitung luas lingkaran
 double area(double r) {
     return PI * pow(r, 2);
 }
@@ -29,7 +29,6 @@ double area(double r) {
 int main() {
     double x1, y1, x2, y2;
 
-    cout << "Program Perhitungan Lingkaran\n";
     cout << "Masukkan koordinat pusat lingkaran (x1 y1): ";
     cin >> x1 >> y1;
     cout << "Masukkan koordinat titik pada lingkaran (x2 y2): ";
